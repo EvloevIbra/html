@@ -1,0 +1,407 @@
+
+
+.container{
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	height: 100vh;
+	background: #fff;
+	
+	display: flex;
+}
+/* левая часть контейнера */
+.container .leftSide {
+	position: relative;
+	flex: 25%;
+	background:#fff;
+	
+
+}
+/* правая часть контейнера */
+.container .rightSide
+{
+	position: relative;
+	flex: 75%;
+	background: #fff;
+	
+}
+/* шапка */
+.leftSide header{
+	position: relative;
+	width: 100%;
+	height: 15%;
+	background:#4B75FF; ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 15px;
+}
+/* оформление логотипа */
+
+.leftSide header h1 {
+	position: absolute;
+	
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 48px;
+	
+	text-align: center;
+	color: #FFFEFE;
+	
+}
+/* поиск */
+.search {
+	position: relative;
+	width: 100%;
+	height: 10%;
+	background-color: #CDD9FF;;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 15px;
+	border-bottom: #4B75FF solid 5px 
+}
+.search div {
+	width: 100%;
+	
+}
+.search div input {
+	width: 100%;
+	outline: none;
+	border: none;
+	background: #fff;
+	padding: 6px;
+	height: 10%;
+	border-radius: 30px;
+	
+}
+/* список подразделений */
+.list_of_divisions{
+	
+	position: relative;
+	height: calc(100% - 30%);
+	overflow-y: auto;
+	
+}
+/* кнопка подразделения */
+.link_division{
+	width: 100%;
+	height: 85px;;
+	background-color: rgb(205, 217, 255);
+	border-top:#4B75FF solid 11px  ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.4s ease;
+}
+
+.link_division:hover{
+	background: rgb(254, 254, 254); /* Old browsers */
+    transition: all 1s ease;
+	
+	
+}
+
+/* оформление названия подразления */
+.name_division {
+	position: absolute;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	color: #000000;
+
+}
+/* список кафедр */
+li ul{
+    position: relative;
+    min-width: 150px;
+    display: none;
+	
+	
+}
+	
+li:hover > ul{
+		width: 100%;
+		
+	
+		
+		
+		display: block;
+	   }
+.link_division2{
+	position:relative;
+	width: 100%;
+	height: 100%;
+	border-bottom:#CDD9FF solid 5px  ;
+	border-left:#CDD9FF solid 3px  ;
+	border-right:#CDD9FF solid 3px  ;
+	background: #4B75FF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.4s ease;
+
+	
+	
+
+}
+.link_division2:hover{
+	background: rgb(254, 254, 254); /* Old browsers */
+    transition: all 0.5s ease;}
+.name_division2{
+	
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	color: #000000;	
+}
+
+
+
+
+
+
+.rightSide .header{
+	position: relative;
+	width: 100%;
+	height: 15%;
+	background:#4B75FF; ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.rightSide .header h1 {
+	position: absolute;
+	
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	
+	text-align: center;
+	color: #FFFEFE;}
+
+/* список устройств */
+.contener_equipment_list{
+		position: fixed;
+		height: 80%;
+		display: flex;
+		flex-wrap: wrap;
+		
+		justify-content: space-between;
+		
+		overflow:auto;
+		padding-top:25px ;
+		padding-left: 26px;
+		padding-right: 10px;
+		padding-bottom: 25px;
+		
+	
+	
+	
+}
+/* иконки */
+img{
+	position: relative;
+	left: 25%;
+	top: 2px;
+	width: 50%;
+	height: 50%;
+	display: block;
+}
+/* карточка */
+.equipment_link{
+	
+	display: block;
+	
+	height: 30%;
+	width: 23%;
+	border: #4B75FF solid  10px;
+	border-radius: 15px;
+	
+}
+/* изменение цвета при наведении */
+.equipment_link:hover{
+	background:  #cdd9ffa0; /* Old browsers */
+	
+	
+    transition: all 0.3s ease;
+	
+}
+/* название устройства */
+.name{	
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 64px;
+	line-height: 77px;
+	text-align: center;
+	
+	color: #000000;
+}
+/* количество устройств */
+.count{
+
+
+
+	position: relative;
+	
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 72px;
+	
+	text-align: end;
+	color: #000000;
+	
+}
+/*  */
+.table{
+	position: relative;
+	overflow:auto;
+	height: 85%;
+	
+}
+
+.address{
+	width: 100%;
+	height: 60px;
+	border-bottom: #4B75FF solid 5px;
+	border-left: #4B75FF solid 5px;
+	background: #CDD9FF;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+.headings{
+	width:  100%;
+	display: flex;
+	
+
+}
+.headings p{
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-left: #4B75FF solid 5px;
+	border-bottom: #4B75FF solid 5px;
+	position: relative;
+	
+	
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	
+	text-align: center;
+	color: #000000;
+}
+.data{
+	position: relative;
+	height: calc(100% - 25%);
+	overflow-y: auto;
+	
+}
+.data ul {
+	width: 100%;
+	display: flex;
+	
+	
+}
+.data li{
+	width: 100%;
+	
+	
+	
+}
+.data p{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-left: #4B75FF solid 5px;
+	border-bottom: #4B75FF solid 5px;
+	position: relative;
+	
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	
+	text-align: center;
+	color: #000000;
+
+}
+.dropbtn {
+            
+	border: none;
+	cursor: pointer;
+}
+
+.dropbtn:hover {
+	color: #d60000;
+}
+
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	
+	padding: 10px 12px;
+	
+	display: block;
+}
+.dropdown-content p{
+	border: none;
+	padding: 10px 12px;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+/* Адаптация не сделал*/
+@media (max-width: 1920px) {
+	
+		
+	
+	.equipment_link{
+		border: #4B75FF solid 8px;
+	}
+	.name{
+		font-size: 36px;
+		line-height: 57px;
+	}
+	.count{
+		font-size: 48px;
+		
+		}}
+		
+	@media (max-width: 1280px) {
+		
+		.equipment_link{
+			border: #4B75FF solid 5px;
+		}
+		.name{
+			font-size: 28px;
+			line-height: 30px;
+		}
+		.count{
+			font-size: 36px;
+			
+		}
+		}
+		
+		
