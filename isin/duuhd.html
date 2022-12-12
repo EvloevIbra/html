@@ -100,7 +100,7 @@
 			<div class="data">
 				<ul>
 					<li>
-						<p class="number">1</p>
+						<p class="item_id">1</p>
 					</li>
 				<li>
 					<p class="device_type">ПК</p>
@@ -109,33 +109,39 @@
 					<p class="inventory_number">12345</p>
 				</li>
 				<li>
-					<p><button onclick="myFunction()" class="dropbtn">Иванов И.И.</button></p>
-					<div id="responsible" class="dropdown-content">
-					<p> Иванов Иван Иванович</p>
-					<p> Должность: Лаборант</p>
 					
-					 <p> Телефон: <a href="tel: +74951234567">+7 (495) 123-45-67</a></p>
-					<p> Е-майл: <a href="mailto: ple@mail.ru">ple@mail.ru</a></p>
-				 </div>
+					<p class="clicker" tabindex="1">Иванов И.И.</p>
+					<div class="windows">
+					<p>	Иванов Иван Иванович</p>
+					<p>	Должность: Лаборант</p>
+					 <p>	Телефон: <a href="tel: +74951234567"> +7 (495) 123-45-67</a></p>
+	 				<p>	Е-майл: <a href="mailto: ple@mail.ru">ple@mail.ru</a></p></div>
 				 </li>
 				
 				<li>
-					<p><button onclick="myFunctions ()" class="dropbtn">посмотреть</button></p>
-					<div id="peripheral_devices" class="dropdown-content">
-					<p>Монитор</p>
-					<p>Клавиатура</p>
-					<p>Мышь</p>
-					<p> принтер</p>
-				 </div>
+				<p class="clicker" tabindex="1">посмотреть</p>
+					<div class="windows">
+						<p>Монитор</p>
+						<p>Клавиатура</p>
+						<p>Мышь</p>
+						<p>Принтер</p>
+						
+					 	</div>	
 		
 				</li>
-				<li><p> <a href="#">посмотреть</a></p>
-					<!-- <ul class="specifications">
-						
-					</ul> -->
-				
-				</li>
+				<li>
+					<p class="clicker" tabindex="1">посмотреть</p>
+						<div class="windows">
+							<p>Мат. плата       ASUS</p>
+							<p>Процессор       Intel Core i3</p>
+							<p>ОЗУ   DDR3  х2 (8Гб)</p>
+							<p>SSD    SAMSUNG 256 Гб</p>
+							
+							 </div>	
+			
+					</li>
 				</ul>		
+				
 
 				
 				
@@ -152,25 +158,6 @@
 		</div>
 		
 	</div>
-	<script>
-		/* Когда пользователь нажимает на кнопку, переключаться раскрывает содержимое */
-		function myFunction() {
-		  document.getElementById("responsible").classList.toggle("show");
-		  document.getElementById("peripheral_devices").classList.toggle("show");
-		}
-		// Закрыть раскрывающийся список, если пользователь щелкнет за его пределами.
-		window.onclick = function(event) {
-		  if (!event.target.matches('.dropbtn')) {
-			var dropdowns = document.getElementsByClassName("dropdown-content");
-			var i;
-			for (i = 0; i < dropdowns.length; i++) {
-			  var openDropdown = dropdowns[i];
-			  if (openDropdown.classList.contains('show')) {
-				openDropdown.classList.remove('show');
-			  }
-			}
-		  }
-		}
-		</script> 
+	
 </body>
 </html>

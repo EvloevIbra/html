@@ -44,7 +44,7 @@
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 48px;
+	font-size: calc(100vw/25);
 	
 	text-align: center;
 	color: #FFFEFE;
@@ -64,32 +64,41 @@
 }
 .search div {
 	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	
 }
 .search div input {
 	width: 100%;
+	
 	outline: none;
 	border: none;
 	background: #fff;
-	padding: 6px;
-	height: 10%;
-	border-radius: 30px;
+	padding: calc(100vw/230) ;;
 	
+	border-radius: calc(100vw/125);
+	font-size: calc(100vw/85);
+		
 }
 /* список подразделений */
 .list_of_divisions{
 	
+	background: #4B75FF;
 	position: relative;
-	height: calc(100% - 30%);
+	height: calc(100% - 26%);
 	overflow-y: auto;
 	
 }
 /* кнопка подразделения */
 .link_division{
 	width: 100%;
-	height: 85px;;
+	height:  calc(100vw/16);
 	background-color: rgb(205, 217, 255);
-	border-top:#4B75FF solid 11px  ;
+	border-top:#4B75FF solid  calc(100vw/200);  
+	border-left: #4B75FF solid calc(100vw/250);
+	border-right: #4B75FF solid calc(100vw/250);
+	border-bottom: rgb(205, 217, 255) solid calc(100vw/250);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -109,39 +118,49 @@
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 32px;
+	font-size: calc(100vw/40);
 	color: #000000;
 
 }
 /* список кафедр */
 li ul{
     position: relative;
-    min-width: 150px;
+    min-width: calc(100vw/230) ;
     display: none;
 	
 	
+	
 }
+
 	
 li:hover > ul{
 		width: 100%;
-		
-	
-		
-		
 		display: block;
+		
+		
 	   }
+.active{
+	background: #ddd;
+}
+
+	  
 .link_division2{
 	position:relative;
 	width: 100%;
 	height: 100%;
-	border-bottom:#CDD9FF solid 5px  ;
-	border-left:#CDD9FF solid 3px  ;
-	border-right:#CDD9FF solid 3px  ;
+	border-bottom:#CDD9FF solid calc(100vw/310)  ;
+	border-left:#CDD9FF solid calc(100vw/230) ;
+	border-right:#CDD9FF solid calc(100vw/230) ;
 	background: #4B75FF;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	transition: all 0.4s ease;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: calc(100vw/60);
+	color: #ffffff;
 
 	
 	
@@ -149,15 +168,10 @@ li:hover > ul{
 }
 .link_division2:hover{
 	background: rgb(254, 254, 254); /* Old browsers */
-    transition: all 0.5s ease;}
-.name_division2{
-	
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 24px;
-	color: #000000;	
+    transition: all 0.5s ease;
+	color: #000;	
 }
+
 
 
 
@@ -180,7 +194,7 @@ li:hover > ul{
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 28px;
+	font-size: calc(100vw/40);
 	
 	text-align: center;
 	color: #FFFEFE;}
@@ -195,10 +209,11 @@ li:hover > ul{
 		justify-content: space-between;
 		
 		overflow:auto;
-		padding-top:25px ;
-		padding-left: 26px;
-		padding-right: 10px;
-		padding-bottom: 25px;
+		padding-top:calc(100vw/85) ;
+		padding-left: calc(100vw/102);
+		padding-right: calc(100vw/125);
+		
+		
 		
 	
 	
@@ -220,8 +235,9 @@ img{
 	
 	height: 30%;
 	width: 23%;
-	border: #4B75FF solid  10px;
-	border-radius: 15px;
+	border: #4B75FF solid  calc(100vw/250);
+
+	border-radius: calc(100vw/125);
 	
 }
 /* изменение цвета при наведении */
@@ -237,8 +253,8 @@ img{
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 64px;
-	line-height: 77px;
+	font-size: calc(100vw/40);
+	
 	text-align: center;
 	
 	color: #000000;
@@ -253,7 +269,7 @@ img{
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 72px;
+	font-size: calc(100vw/40);
 	
 	text-align: end;
 	color: #000000;
@@ -263,23 +279,35 @@ img{
 .table{
 	position: relative;
 	overflow:auto;
-	height: 85%;
+	height: 84%;
+	padding-left: 2px;
+	
 	
 }
 
 .address{
 	width: 100%;
-	height: 60px;
-	border-bottom: #4B75FF solid 5px;
-	border-left: #4B75FF solid 5px;
+	height: calc(100vw/22) ;
+	border-bottom: #4B75FF solid calc(100vw/330) ;
+	border-left: #4B75FF solid calc(100vw/330) ;
 	background: #CDD9FF;
 	display: flex;
 	justify-content: center;
 	align-items: center;	
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: calc(100vw/52);
+	
+	text-align: center;
+	
+	color: #000000;
 }
 .headings{
 	width:  100%;
 	display: flex;
+	
+	
 	
 
 }
@@ -288,22 +316,22 @@ img{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-left: #4B75FF solid 5px;
-	border-bottom: #4B75FF solid 5px;
+	border-left: #4B75FF solid calc(100vw/330) ;
+	border-bottom: #4B75FF solid calc(100vw/330) ;
 	position: relative;
 	
 	
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 18px;
+	font-size: calc(100vw/69);
 	
 	text-align: center;
 	color: #000000;
 }
 .data{
 	position: relative;
-	height: calc(100% - 25%);
+	height: calc(100% - 20%);
 	overflow-y: auto;
 	
 }
@@ -324,84 +352,73 @@ img{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-left: #4B75FF solid 5px;
-	border-bottom: #4B75FF solid 5px;
+	border-left: #4B75FF solid calc(100vw/330) ;
+	border-bottom: #4B75FF solid calc(100vw/330) ;
 	position: relative;
 	
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 18px;
+	font-size: calc(100vw/77);
 	
 	text-align: center;
 	color: #000000;
 
 }
-.dropbtn {
-            
-	border: none;
-	cursor: pointer;
-}
-
-.dropbtn:hover {
-	color: #d60000;
-}
-
-
-.dropdown-content {
-	display: none;
-	position: absolute;
+.clicker {
+	
+	outline:none;
+	cursor:pointer;
+	}
+	
+	.windows{
+	
+	display:none;
+	
+	
+	padding: 10px;
+	border-radius: 10px;
 	background-color: #f1f1f1;
 	overflow: auto;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
-}
-
-.dropdown-content a {
-	
-	padding: 10px 12px;
-	
-	display: block;
-}
-.dropdown-content p{
-	border: none;
-	padding: 10px 12px;
-}
-
-.dropdown a:hover {background-color: #ddd;}
-
-.show {display: block;}
-
-/* Адаптация не сделал*/
-@media (max-width: 1920px) {
-	
-		
-	
-	.equipment_link{
-		border: #4B75FF solid 8px;
 	}
-	.name{
-		font-size: 36px;
-		line-height: 57px;
+	.windows p{
+		width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	
+	position: relative;
+	
+	
+	font-family: 'Inter';
+	font-style: normal;
+	
+	font-size: calc(100vw/50) ;;
+	
+	text-align: center;
+	color: #000000;
+		border: none;
+	border-bottom: #ddd solid 1px;
 	}
-	.count{
-		font-size: 48px;
-		
-		}}
-		
-	@media (max-width: 1280px) {
-		
-		.equipment_link{
-			border: #4B75FF solid 5px;
-		}
-		.name{
-			font-size: 28px;
-			line-height: 30px;
-		}
-		.count{
-			font-size: 36px;
-			
-		}
-		}
-		
-		
+	.clicker:focus + .windows{
+	display:block;
+	position: absolute;
+	
+	}
+
+.clicker:hover {
+	color: #d60000;
+	background-color: #ddd
+}
+
+
+
+
+
+
+
+
+
