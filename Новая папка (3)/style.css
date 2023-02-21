@@ -99,10 +99,16 @@
 	border-left: #4B75FF solid calc(100vw/250);
 	border-right: #4B75FF solid calc(100vw/250);
 	border-bottom: rgb(205, 217, 255) solid calc(100vw/250);
+	
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	transition: all 0.4s ease;
+}
+
+.active{
+	background: rgb(254, 254, 254); /* Old browsers */
+    transition: all 1s ease;
 }
 
 .link_division:hover{
@@ -269,10 +275,11 @@ img{
 	
 	font-family: 'Inter';
 	font-style: normal;
-	font-weight: 400;
+	/* font-weight: 400; */
 	font-size: calc(100vw/40);
 	
 	text-align: end;
+	margin-right: calc(100vw/150);
 	color: #000000;
 	
 }
